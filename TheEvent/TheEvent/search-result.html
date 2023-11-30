@@ -111,7 +111,7 @@
         <form method="get" action="search-result.html">
           <div class="row justify-content-center">
             <div class="col-lg-6 col-md-10 d-flex">
-              <input type="search" name="q" class="form-control" placeholder="時給を入力">
+              <input type="search" name="q" id="search-input" class="form-control" placeholder="時給を入力">
               <button type="submit" name="q" class="ms-2">Search</button>
 
               <!--良く分からないから放置　<button class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i> 検索</button>-->
@@ -138,7 +138,7 @@
 
 
   <!-- 検索結果の表示エリア -->
-  <div id="search-results" class="mt-4">
+  <div id="search-results" class="mt-4" >
     <!-- ここに検索結果が表示されます -->
   </div>
 
@@ -148,11 +148,11 @@
 
 
         <div class="row">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 ">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
               <img src="assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
-              <div class="details">
-                <h3><a href="speaker-details.html">Brenden Legros</a></h3>
+              <div class="details search-target">
+                <h3><a href="speaker-details.html">飲食キッチン時給1000円</a></h3>
                 <p>Quas alias incidunt</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
@@ -163,10 +163,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 ">
             <div class="speaker" data-aos="fade-up" data-aos-delay="200">
               <img src="assets/img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
-              <div class="details">
+              <div class="details search-target">
                 <h3><a href="speaker-details.html">Hubert Hirthe</a></h3>
                 <p>Consequuntur odio aut</p>
                 <div class="social">
@@ -178,10 +178,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 ">
             <div class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="assets/img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
-              <div class="details">
+              <div class="details search-target">
                 <h3><a href="speaker-details.html">Cole Emmerich</a></h3>
                 <p>Fugiat laborum et</p>
                 <div class="social">
@@ -193,11 +193,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 ">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
               <img src="assets/img/speakers/4.jpg" alt="Speaker 4" class="img-fluid">
-              <div class="details">
-                <h3><a href="speaker-details.html">Jack Christiansen</a></h3>
+              <div class="details search-target">
+                <h3><a href="speaker-details.html">飲食ホールスタッフ時給1200円</a></h3>
                 <p>Debitis iure vero</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
@@ -208,11 +208,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 ">
             <div class="speaker" data-aos="fade-up" data-aos-delay="200">
               <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
-              <div class="details">
-                <h3><a href="speaker-details.html">Alejandrin Littel</a></h3>
+              <div class="details search-target">
+                <h3><a href="speaker-details.html">イチゴの定植作業時給1100円</a></h3>
                 <p>Qui molestiae natus</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
@@ -223,11 +223,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 ">
             <div class="speaker" data-aos="fade-up" data-aos-delay="300">
               <img src="assets/img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
-              <div class="details">
-                <h3><a href="speaker-details.html">Willow Trantow</a></h3>
+              <div class="details search-target">
+                <h3><a href="speaker-details.html">事務作業時給900円</a></h3>
                 <p>Non autem dicta</p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
@@ -335,6 +335,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script src="assets/js/search.js"></script>
 
 </body>
 
