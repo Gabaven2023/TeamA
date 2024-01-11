@@ -1,0 +1,30 @@
+.container {
+    box-sizing: border-box;
+    width: min(1020px, 100%);
+    padding: 0 10px;
+    margin: auto;
+  }
+  
+  .js-base {
+    display: contents;
+  }
+  
+  .spreadsheets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .spreadsheets li {
+    width: 23%;
+  }
+  @media (max-width: 767px) {
+    .spreadsheets li {
+      width: 30%;
+    }
+    .spreadsheets img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+    }
+  }

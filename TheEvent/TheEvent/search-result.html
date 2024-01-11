@@ -26,6 +26,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="">
   <!-- =======================================================
   * Template Name: TheEvent
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -105,14 +106,14 @@
       <div class="container" data-aos="zoom-in">
         <div class="section-header ">
           <h2>時給で探す</h2>
-          <p>Rerum numquam illum recusandae quia mollitia consequatur.</p>
+          <p></p>
         </div>
 
-        <form method="get" action="search-result.html">
+        <form method="get">
           <div class="row justify-content-center">
             <div class="col-lg-6 col-md-10 d-flex">
               <input type="search" name="q" id="search-input" class="form-control" placeholder="時給を入力">
-              <button type="submit" name="q" class="ms-2">Search</button>
+              <button id="search-button" type="submit" name="q" class="ms-2">Search</button>
 
               <!--良く分からないから放置　<button class="btn btn-outline-success" type="button" id="button-addon2"><i class="fas fa-search"></i> 検索</button>-->
 
@@ -130,7 +131,7 @@
     <section id="speakers">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>検索結果</h2>
+          <h2>求人一覧</h2>
           <p>条件に一致する求人はこちら！</p>
         </div>
 
@@ -138,9 +139,43 @@
 
 
   <!-- 検索結果の表示エリア -->
-  <div id="search-results" class="mt-4" >
+  <!-- <div id="search-results class="mt-4" >
     <!-- ここに検索結果が表示されます -->
+  <!-- </div> --> 
+
+
+  <div class="container">
+    <ul class="spreadsheets">
+      <li class="spreadsheets--item js-base card padding:10 10 10">
+        
+        <p class="spreadsheets--type"></p>
+        <p class="spreadsheets--title"></p>
+        <p class="spreadsheets--description"></p>
+        <p class="spreadsheets--wage"></p>
+        <p class="spreadsheets--time"></p>
+        <p class="spreadsheets--members"></p>
+        <p class="spreadsheets--place"></p>
+        <p class="spreadsheets--terms"></p>
+      </li>
+    </ul>
   </div>
+
+  <div class="card spreadsheets" style="width: 18rem;">
+  <div class="card-header">
+    <p class="spreadsheets--title"></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"></li>
+    <li class="list-group-item"></li>
+    <li class="list-group-item"></li>
+  </ul>
+  </div>
+
+
+
+
+
+
 
 
 
@@ -163,88 +198,12 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
-              <div class="details search-target">
-                <h3><a href="speaker-details.html">Hubert Hirthe</a></h3>
-                <p>Consequuntur odio aut</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="assets/img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
-              <div class="details search-target">
-                <h3><a href="speaker-details.html">Cole Emmerich</a></h3>
-                <p>Fugiat laborum et</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/4.jpg" alt="Speaker 4" class="img-fluid">
-              <div class="details search-target">
-                <h3><a href="speaker-details.html">飲食ホールスタッフ時給1200円</a></h3>
-                <p>Debitis iure vero</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
-              <div class="details search-target">
-                <h3><a href="speaker-details.html">イチゴの定植作業時給1100円</a></h3>
-                <p>Qui molestiae natus</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-              <img src="assets/img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
-              <div class="details search-target">
-                <h3><a href="speaker-details.html">事務作業時給900円</a></h3>
-                <p>Non autem dicta</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
 
     </section><!-- End Speakers Section -->
 
 
-<p>おいしいごはん</p>
+
 
   </main><!-- End #main -->
 
@@ -336,8 +295,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <script src="assets/js/search.js"></script>
-
+  <!-- <script src="assets/js/search.js"></script> -->
+  <script src="assets/js/spreadsheets.js"></script>
 </body>
 
 </html>
