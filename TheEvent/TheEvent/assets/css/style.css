@@ -44,7 +44,7 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: #0e1b4d;
+  color: rgba(63, 184, 75, 100);
 }
 
 .main-page {
@@ -711,7 +711,7 @@ h6 {
 }
 
 #speakers .speaker .details {
-  background: rgba(6, 12, 34, 0.76);
+  background: rgba(63, 184, 75, 100);
   position: absolute;
   left: 0;
   bottom: -40px;
@@ -825,7 +825,7 @@ h6 {
   border: none;
   border-radius: 50px;
   font-weight: 600;
-  background-color: #0e1b4d;
+  background-color: rgba(63, 184, 75, 100);
   color: #fff;
   padding: 10px 100px;
 }
@@ -1250,7 +1250,7 @@ h6 {
   border: 0;
   padding: 9px 25px;
   cursor: pointer;
-  background: #f82249;
+  background: rgba(63, 184, 75, 100);
   color: #fff;
   transition: all 0.3s ease;
   outline: none;
